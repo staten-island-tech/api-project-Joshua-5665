@@ -156,7 +156,7 @@ const videoGames = [
     },
   },
 ];
-const publishers = { nintendo: 1 };
+const publishers = {};
 
 videoGames.forEach((game) => {
     let studio = game.studio;

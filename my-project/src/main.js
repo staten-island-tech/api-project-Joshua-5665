@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 
 
-const videoGames = [
+/* const videoGames = [
   {
     title: "The Legend of Zelda: Breath of the Wild",
     studio: "Nintendo",
@@ -177,4 +177,4 @@ for(let publisher in publishers){
         </div>
         `
     );
-}
+} */

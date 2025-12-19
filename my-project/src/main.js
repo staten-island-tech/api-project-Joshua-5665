@@ -178,3 +178,10 @@ for(let publisher in publishers){
         `
     );
 } */
+
+const api = "https://currencybeacon.com/";
+
+const jit = document.querySelector('.apibutton');
+jit.addEventListener('click', ()=> {
+  window.alert('Copy and Paste this Link:     ' + api);
+})

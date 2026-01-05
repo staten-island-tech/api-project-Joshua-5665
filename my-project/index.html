@@ -6,8 +6,47 @@
     <link href="/my-project/src/style.css" rel="stylesheet">
     <title>my-project</title>
   </head>
-  <body>
-   <h1 class="text-4xl text-center">Currency Converter</h1>
+  <body class="">
+  
+    <div class="header">
+   <h1 class="text-4xl text-center mt-5">Currency Converter</h1>
+    </div>
+
+    <div class="text-center">
+      
+      <div>
+      <label for="currency" class="ml-10">Select a Currency:
+        <select name="currencies1" id="breh1" class="">
+          <option value="ADA">ADA</option>
+          <option value="AFN">AFN</option>
+          <option value="ALL">ALL</option>
+          <option value="AMD">AMD</option>
+          <option value="ANG">ANG</option>
+          <option value="AOA">AOA</option>
+          <option value="ARS">ARS</option>
+          <option value="ATS">ATS</option>
+        </select> 
+      </label>
+      </div>
+        
+      <div>
+        <label for="currency" class="ml-10">Converted Currency
+          <select name="currencies2" id="breh2" class="">
+          <option value="ADA">ADA</option>
+          <option value="AFN">AFN</option>
+          <option value="ALL">ALL</option>
+          <option value="AMD">AMD</option>
+          <option value="ANG">ANG</option>
+          <option value="AOA">AOA</option>
+          <option value="ARS">ARS</option>
+          <option value="ATS">ATS</option>
+        </select>
+        </label>
+      </div>
+    
+      </div>
+
+    
 
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>

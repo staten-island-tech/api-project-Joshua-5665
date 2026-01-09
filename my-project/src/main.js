@@ -25,3 +25,32 @@ async function getData() {
 }
 getData();
 
+function moreOption(data) {
+  const breh1 = document.getElementById('breh1');
+  const breh2 = document.getElementById('breh2');
+  Object.entries(data.rates).forEach(([name, rate]) => {
+    const option1 = document.createElement(`option`);
+    option1.text = name;
+    breh1.add(option1);
+    const option2 = document.createElement(`option`);
+    option2.text = name;
+    breh2.add(option2);
+
+  });
+}
+convertCurrency();
+async function main() {
+  const data = await getData();
+  moreOption(data);
+}
+main();
+
+
+
+const click = document.getElementById('jit');
+const idk = document.getElementById('why')
+click.addEventListener('click', ()=> {
+  
+  idk.value = 'Conversion Error'
+
+})

@@ -15,7 +15,7 @@
     <div class="mt-10 flex justify-evenly h-40">
       
       <label for="currency" class="">Select a Currency:
-        <select name="currencies1" id="breh1" class="">
+        <select name="currencies1" id="from" class="">
           <option value="holder">--Currency to Convert--</option>
           <option value="ADA">ADA</option>
           <option value="AFN">AFN</option>
@@ -45,10 +45,10 @@
           <option value="USD">USD</option>
         </select> 
       </label>
-        <input type="number" class="border-2 w-60 h-20 rounded-2xl pl-2 focus:ring-3 focus:ring-blue-500" placeholder="Enter Amount"></input>
+        <input type="number" id ="amount" class="border-2 w-60 h-20 rounded-2xl pl-2 focus:ring-3 focus:ring-blue-500" placeholder="Enter Amount"></input>
 
         <label for="currency" class="">Convert to:
-          <select name="currencies2" id="breh2" class="">
+          <select name="currencies2" id="to" class="">
             <option value="holder2">--Converted Currency--</option>
           <option value="ADA">ADA</option>
           <option value="AFN">AFN</option>
@@ -79,10 +79,10 @@
           
         </select>
         </label>
-        <input id="why" class="border-2 w-60 h-20 rounded-2xl pl-2 focus:ring-3 focus:ring-blue-500" placeholder="Enter Amount"></input>
+       
 
-      <button id="jit" class="w-20 h-10 rounded-2xl border-2 bg-blue-400 cursor-pointer text-xs">CONVERT</button>
-      
+      <button id="convertBtn" class="w-20 h-10 rounded-2xl border-2 bg-blue-400 cursor-pointer text-xs">CONVERT</button>
+      <h2 id="result"></h2>
     </div> 
 
     <div id="app"></div>

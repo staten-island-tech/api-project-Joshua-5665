@@ -45,10 +45,6 @@ button.addEventListener("click", async () => {
     const response = await fetch(url);
     const data = await response.json();
 
-    if (data.meta.code !== 200) {
-      throw new Error("Conversion failed");
-    }
-
     result.textContent = `${amount} ${from} = ${data.response.value} ${to}`;
   } catch (error) {
     result.textContent = "Error converting currency";

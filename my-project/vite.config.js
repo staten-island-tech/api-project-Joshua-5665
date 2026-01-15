@@ -6,13 +6,4 @@ export default defineConfig({
     tailwindcss(),
   ],
   
-  server: {
-    proxy: {
-      "/api": {
-        target: "https://api.currencyscoop.com",
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ""),
-      },
-    },
-  },
-});
+})
